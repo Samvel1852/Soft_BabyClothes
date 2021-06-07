@@ -6,16 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Soft_Baby</title>
     <link rel="icon" href="images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="topnav">
-      <img src="images/logo.jpg" width="100" />
-      <a class="active" href="#home">Home</a>
+    <nav id="homeNavbar" class="topnav">
+      <a href="main.html"><img src="images/logo.jpg" width="70" /> </a>
+      <a id="home" href="main.html">Home</a>
       <a href="#news">Boys</a>
       <a href="#contact">Girls</a>
       <a href="newborns">Newborns</a>
       <a href="contact">Contact</a>
       <a href="#about">About</a>
-    </div>
+      <form id="Search" action="main.html">
+        <input type="text" placeholder="Search by name" name="search" />
+        <button type="submit">
+          <img src="images/search-icon.png" alt="Search" width="10" />
+        </button>
+      </form>
+    </nav>
+    <section id="section1">
+      <div>
+        <div id="hotSell">
+          <img
+            src="images/hot-selling1.jpg"
+            alt="Image not loaded"
+            width="100px"
+          />
+          <img
+            src="images/hot-selling2.jpg"
+            alt="Image not loaded"
+            width="100px"
+          />
+        </div>
+        <button>Hot Selling</button>
+      </div>
+    </section>
   </body>
 </html>
