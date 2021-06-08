@@ -33,6 +33,7 @@
   min-height: 600px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(129, 150, 144);
 }
 
 .itemImg {
@@ -46,16 +47,48 @@
   display: flex;
   flex-direction: column;
   border: 2px solid blue;
+  background-color: rgb(201, 233, 230);
 }
 
 .addToCart {
     border: 2px solid blue;
     background-color: cadetblue;
-    outline: 1px;
+    margin-bottom: 3px;
+    transition: 0.3s;
+    
+}
+
+.addToCart:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    
 }
 
 .buyNow {
     border:2px solid blue;
-    background-color: cadetblue;
-    outline: 5px;
+    background-color: yellowgreen;
+    transition: 0.3s;
+}
+
+.buyNow:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+
+.itemName {
+    font-family: Fantasy;
+}
+
+.itemPrice {
+    font-family: Fantasy;
+}
+
+#headSection {
+    margin: 10px;
+    background-color: teal;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
