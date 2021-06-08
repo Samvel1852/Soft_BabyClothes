@@ -9,37 +9,59 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav id="homeNavbar" class="topnav">
-      <a href="main.html"><img src="images/logo.jpg" width="70" /> </a>
-      <a id="home" href="main.html">Home</a>
-      <a href="boys.html">Boys</a>
-      <a href="#contact">Girls</a>
-      <a href="newborns">Newborns</a>
-      <a href="contact">Contact</a>
-      <a href="#about">About</a>
-      <form id="Search" action="main.html">
-        <input type="text" placeholder="Search by name" name="search" />
-        <button type="submit">
-          <img src="images/search-icon.png" alt="Search" width="10" />
-        </button>
-      </form>
-    </nav>
+    <header id="mainNavbar">
+      <nav id="homeNavbar" class="topnav">
+        <a id="logo" href="main.html"
+          ><img src="images/logo.jpg" width="70" /><b>
+            <span style="color: blue">S</span>_<span style="color: blueviolet"
+              >B</span
+            ></b
+          >
+        </a>
+        <a id="home" href="main.html">Home</a>
+        <a href="#news">Boys</a>
+        <a href="girls.html">Girls</a>
+        <a href="newborn.html">Newborns</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <form id="Search" action="main.html">
+          <input type="text" placeholder="Search by name" name="search" />
+          <button type="submit">
+            <img src="images/search-icon.png" alt="Search" width="10" />
+          </button>
+        </form>
+      </nav>
+    </header>
     <section id="section1">
       <div>
         <div id="hotSell">
-          <img
-            src="images/hot-selling1.jpg"
-            alt="Image not loaded"
-            width="100px"
-          />
-          <img
-            src="images/hot-selling2.jpg"
-            alt="Image not loaded"
-            width="100px"
-          />
+          <div class="homeHotSaleImgDivs">
+            <img
+              src="images/hot-selling1.jpg"
+              alt="Image not loaded"
+              width="100px"
+            />
+            <p class="saleText">50% Off</p>
+          </div>
+          <div class="homeHotSaleImgDivs">
+            <img
+              src="images/hot-selling2.jpg"
+              alt="Image not loaded"
+              width="100px"
+            />
+            <p class="saleText">50% Off</p>
+          </div>
         </div>
-        <button>Hot Selling</button>
+        <div id="sc1BtnDiv">
+          <button>Hot Sale!</button>
+        </div>
       </div>
     </section>
+    <section id="section2">
+      <div><h4>Policies</h4></div>
+      <div><h4>Let Us Help You</h4></div>
+      <div><h4>Get To Know Us</h4></div>
+    </section>
+    <footer id="homeFooter">Footer About</footer>
   </body>
 </html>
