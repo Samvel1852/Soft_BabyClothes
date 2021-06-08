@@ -3,12 +3,17 @@
   padding: 0;
 }
 
+#logo > b > span {
+  font-size: 4em;
+}
+
 #homeNavbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   /* position: fixed; */
   background-color: lightblue;
+  flex-wrap: wrap;
 }
 
 #homeNavbar > a {
@@ -38,7 +43,12 @@
   align-items: center;
 }
 
-#section1 > div > button {
+#sc1BtnDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#sc1BtnDiv > button {
   border: none;
   background-color: turquoise;
   color: white;
@@ -50,7 +60,7 @@
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 }
 
-#section1 > div > button:hover {
+#sc1BtnDiv > button:hover {
   background: lightblue;
   opacity: 0.7;
   cursor: pointer;
@@ -70,13 +80,32 @@
   justify-content: space-around;
 }
 
-#hotSell > img {
+#hotSell > div > img {
   width: 10em;
   transition: 0.4s;
 }
 
-#hotSell > img:hover {
+#hotSell > div > img:hover {
   width: 11em;
   opacity: 0.8;
   cursor: pointer;
+}
+
+.saleText {
+  color: white;
+  font-size: 2em;
+}
+
+#section2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  min-height: 400px;
+  background-color: #add8e6;
+  color: white;
+}
+
+#section2 > div > h4 {
+  font-weight: bold;
+  font-size: 2em;
 }
