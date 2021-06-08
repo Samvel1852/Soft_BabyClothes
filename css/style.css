@@ -11,6 +11,11 @@ body {
   font-size: 4em;
 }
 
+#mainNavbar {
+  width: 100%;
+  position: fixed;
+}
+
 #homeNavbar {
   display: flex;
   justify-content: space-around;
@@ -112,4 +117,9 @@ body {
 #section2 > div > h4 {
   font-weight: bold;
   font-size: 2em;
+}
+
+#homeFooter {
+  min-height: 50px;
+  background-color: lightgray;
 }
