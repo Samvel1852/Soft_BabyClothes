@@ -104,3 +104,21 @@ body {
   min-height: 50px;
   background-color: lightgray;
 }
+
+.listItems {
+  margin: 15px;
+}
+
+.section2Titles {
+  margin: 20px;
+}
+
+.section2Ul {
+  list-style-type: none;
+}
+
+#homeFooter {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}

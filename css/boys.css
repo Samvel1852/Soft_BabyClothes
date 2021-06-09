@@ -126,3 +126,9 @@
 .section2Ul {
   list-style-type: none;
 }
+
+#homeFooter {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}

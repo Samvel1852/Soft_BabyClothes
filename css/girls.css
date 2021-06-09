@@ -110,9 +110,15 @@ body {
 }
 
 .section2Titles {
-    margin: 0px
+  margin: 0px;
 }
 
 .section2Ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+#homeFooter {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
 }
