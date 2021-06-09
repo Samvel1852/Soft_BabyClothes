@@ -44,7 +44,7 @@ body {
 #section1 {
   width: 100%;
   background-color: rgba(226, 216, 216, 0.993);
-  min-height: 600px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
 }
@@ -55,11 +55,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 2.5em;
 }
 
 .contactInfoDiv {
   width: 100%;
-  min-height: 500px;
+  min-height: 350px;
   display: flex;
 }
 
@@ -67,37 +69,60 @@ body {
   width: 50%;
 }
 
-.itemDiv {
-  width: 20%;
-  /* margin-top: 1em; */
+.inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.inputs > textarea {
+  resize: none;
+  height: 200px;
+}
+
+.inputs > button {
+  width: 50%;
+}
+
+.submitBtn {
+  background-color: green;
+  color: black;
+  font-size: 1.5em;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.submitBtn:hover {
+  background-color: lightgreen;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contactInputs {
+  flex-direction: column;
+  justify-content: left;
+}
+
+.infoLines {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.infoLines > img {
+  width: 30px;
+}
+
+.linkIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkIcons > img {
+  width: 30px;
   margin: 5px;
-}
-
-.itemImg {
-  width: 100%;
-  height: 70%;
-}
-
-.addToCart {
-  background-color: yellow;
-  font-size: 1em;
-  transition: 0.5s;
-}
-
-.buyNow {
-  background-color: orange;
-  font-size: 1em;
-  transition: 0.5s;
-}
-
-.addToCart:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-.buyNow:hover {
-  cursor: pointer;
-  transform: scale(1.2);
 }
 
 #section2 {
