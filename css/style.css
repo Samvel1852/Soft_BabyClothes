@@ -124,3 +124,7 @@ body {
   min-height: 50px;
   background-color: lightgray;
 }
+
+.listItems {
+  margin: 5px;
+}

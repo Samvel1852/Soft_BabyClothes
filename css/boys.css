@@ -86,9 +86,43 @@
 
 #headSection {
     margin: 10px;
-    background-color: teal;
+    background-color: rgb(104, 216, 216);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#section2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    min-height: 400px;
+    background-color: #add8e6;
+    color: white;
+  }
+  
+  #section2 > div > h4 {
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  #homeFooter {
+    min-height: 50px;
+    background-color: lightgray;
+  }
+
+  #logo > b > span {
+    font-size: 4em;
+  }
+  .listItems {
+    margin: 15px;
+  }
+
+  .section2Titles {
+      margin: 20px
+  }
+
+  .section2Ul {
+      list-style-type: none;
+  }
