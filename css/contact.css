@@ -57,6 +57,7 @@ body {
   align-items: center;
   color: white;
   font-size: 2.5em;
+  align-content: space-around;
 }
 
 .contactInfoDiv {
@@ -71,7 +72,11 @@ body {
 }
 
 .inputs {
+<<<<<<< HEAD
   width: 400px;
+=======
+  width: 500px;
+>>>>>>> 2331756885fd31f6cd991f6e1da5d184d883dd8d
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -143,4 +148,22 @@ body {
 #homeFooter {
   min-height: 50px;
   background-color: lightgray;
+}
+
+.listItems {
+  margin: 15px;
+}
+
+.section2Titles {
+  margin: 20px;
+}
+
+.section2Ul {
+  list-style-type: none;
+}
+
+#homeFooter {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
 }
