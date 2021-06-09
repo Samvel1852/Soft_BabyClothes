@@ -49,12 +49,12 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
+  border-radius: 10px;
   background-color: rgb(201, 233, 230);
 }
 
 .addToCart {
-  border: 2px solid blue;
+  border: none;
   background-color: cadetblue;
   margin-bottom: 3px;
   transition: 0.3s;
@@ -66,7 +66,7 @@
 }
 
 .buyNow {
-  border: 2px solid blue;
+  border: none;
   background-color: yellowgreen;
   transition: 0.3s;
 }
@@ -94,7 +94,6 @@
 }
 
 #section2 {
-<<<<<<< HEAD
     display: grid;
     grid-template-columns: auto auto auto;
     width: 100%;
@@ -127,37 +126,3 @@
   .section2Ul {
       list-style-type: none;
   }
-=======
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 100%;
-  min-height: 400px;
-  background-color: #add8e6;
-  color: white;
-}
-
-#section2 > div > h4 {
-  font-weight: bold;
-  font-size: 2em;
-}
-
-#homeFooter {
-  min-height: 50px;
-  background-color: lightgray;
-}
-
-#logo > b > span {
-  font-size: 4em;
-}
-.listItems {
-  margin: 15px;
-}
-
-.section2Titles {
-  margin: 20px;
-}
-
-.section2Ul {
-  list-style-type: none;
-}
->>>>>>> ac6f60ab2cd4d2e464ecca667aa2b38bc3d9e970
