@@ -54,12 +54,12 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
+  border-radius: 5px;
   background-color: rgb(201, 233, 230);
 }
 
 .addToCart {
-  border: 2px solid blue;
+  border: none;
   background-color: cadetblue;
   margin-bottom: 3px;
   transition: 0.3s;
@@ -71,7 +71,7 @@
 }
 
 .buyNow {
-  border: 2px solid blue;
+  border: none;
   background-color: yellowgreen;
   transition: 0.3s;
 }

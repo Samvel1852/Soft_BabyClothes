@@ -45,7 +45,7 @@
 }
 
 .itemImg {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .items {
@@ -54,17 +54,20 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   background-color: #fbd2da;
-  width: 20%;
+  width: 250px;
+  align-items: center;
 }
 
 .items > img {
+  width: 100%;
   height: 250px;
 }
 
 .addToCart {
-  border: 2px solid black;
+  width: 70%;
+  border: none;
   background-color: white;
   margin-bottom: 3px;
   transition: 0.3s;
@@ -76,7 +79,8 @@
 }
 
 .buyNow {
-  border: 2px solid black;
+  width: 70%;
+  border: none;
   background-color: #89d9e7;
   transition: 0.3s;
 }
