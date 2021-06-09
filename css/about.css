@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#homeNavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: fixed; */
+    background-color: rgb(124, 204, 124);
+}
+  
+#homeNavbar > a {
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+#homeNavbar > a:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+  
+#homeNavbar > a > img {
+    border-radius: 80%;
+}
+  
+#section1 {
+    width: 100%;
+    /* background-image: url(../images/home-page-first-bac?hground.jpg); */
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(129, 150, 144);
+}
+  
+.itemImg {
+    width: 100%;
+}
+
+
+.items {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    background-color: rgb(201, 233, 230);
+  }
+  
+  .addToCart {
+      border: 2px solid blue;
+      background-color: cadetblue;
+      margin-bottom: 3px;
+      transition: 0.3s;
+      
+  }
+  
+  .addToCart:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      
+  }
+  
+  .buyNow {
+      border:2px solid blue;
+      background-color: yellowgreen;
+      transition: 0.3s;
+  }
+  
+  .buyNow:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+  
+    }
+    
+    .itemName {
+        font-family: Fantasy;
+  }
+  
+  .itemPrice {
+      font-family: Fantasy;
+  }
+  
+  #headSection {
+      margin: 10px;
+      background-color: rgb(104, 216, 216);
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  #section2 {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      width: 100%;
+      min-height: 400px;
+      background-color: rgb(124, 204, 124);
+      color: black;
+      
+    }
+    
+    #section2 > div > h4 {
+        font-weight: bold;
+      font-size: 2em;
+    }
+    
+    #homeFooter {
+        min-height: 50px;
+        background-color: lightgray;
+    }
+  
+    #logo > b > span {
+        font-size: 4em;
+    }
+    .listItems {
+        margin: 15px;
+    }
+    
+    .section2Titles {
+        margin: 20px
+    }
+    
+    .section2Ul {
+        list-style-type: none;
+    }
+    
+    #orderedList {
+        margin-left: 20px;
+    }
+    
+    #header1 {
+        display: flex;
+        justify-content: center;
+        font-size:25px;
+    }
+    
+    #gagasik {
+        padding: 20px;
+        background-color: cornsilk;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+    
+      

@@ -111,7 +111,7 @@ body {
   grid-template-columns: auto auto auto;
   width: 100%;
   min-height: 400px;
-  background-color: #add8e6;
+  background-color: #cfade6;
   color: white;
 }
 
@@ -126,5 +126,13 @@ body {
 }
 
 .listItems {
-  margin: 5px;
+  margin: 15px;
+}
+
+.section2Titles {
+    margin: 20px
+}
+
+.section2Ul {
+    list-style-type: none;
 }
