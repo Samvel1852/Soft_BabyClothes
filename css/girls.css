@@ -60,14 +60,16 @@
   flex-direction: column;
   /* border: 2px solid black; */
   background-color: #fbd2da;
-  width: 20%;
+  width: 250px;
+  align-items: center;
 }
 
 .items > img {
-  /* height: 250px; */
+  height: 250px;
 }
 
 .addToCart {
+  width: 80%;
   border: none;
   background-color: white;
   margin-bottom: 3px;
@@ -80,6 +82,7 @@
 }
 
 .buyNow {
+  width: 80%;
   border: none;
   background-color: #fbbfcb;
   transition: 0.3s;
