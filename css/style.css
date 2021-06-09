@@ -111,7 +111,7 @@ body {
   grid-template-columns: auto auto auto;
   width: 100%;
   min-height: 400px;
-  background-color: #cfade6;
+  background-color: #add8e6;
   color: white;
 }
 
@@ -130,9 +130,15 @@ body {
 }
 
 .section2Titles {
-    margin: 20px
+  margin: 20px;
 }
 
 .section2Ul {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+#homeFooter {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
 }
