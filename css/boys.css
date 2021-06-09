@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 #homeNavbar {
@@ -8,6 +9,7 @@
   justify-content: space-around;
   align-items: center;
   /* position: fixed; */
+  flex-wrap: wrap;
   background-color: lightblue;
 }
 
@@ -35,8 +37,11 @@
   width: 100%;
   /* background-image: url(../images/home-page-first-bac?hground.jpg); */
   min-height: 600px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgb(129, 150, 144);
 }
 
@@ -85,17 +90,18 @@
 }
 
 #headSection {
-  margin: 10px;
+  margin: 2px;
   background-color: rgb(104, 216, 216);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 #section2 {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, 30%);
   width: 100%;
   min-height: 400px;
   background-color: #add8e6;
