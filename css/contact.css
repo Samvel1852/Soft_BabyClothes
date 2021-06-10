@@ -128,8 +128,9 @@ body {
 }
 
 #section2 {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
   min-height: 400px;
   background-color: #ffb6c1;
