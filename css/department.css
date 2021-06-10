@@ -66,7 +66,7 @@
 }
 
 .addToCart {
-  background-color: cadetblue;
+  background-color: #40e0d0;
   width: 80%;
   border: none;
   margin-bottom: 3px;
@@ -80,7 +80,7 @@
 
 .buyNow {
   border: none;
-  background-color: yellowgreen;
+  background-color: #819690;
   width: 80%;
   transition: 0.3s;
 }
