@@ -6,6 +6,7 @@
 #homeNavbar {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   /* position: fixed; */
   background-color: rgb(124, 204, 124);
@@ -90,8 +91,9 @@
 }
 
 #section2 {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
   min-height: 400px;
   background-color: rgb(124, 204, 124);

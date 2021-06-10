@@ -122,8 +122,14 @@ body {
 }
 
 #section2 {
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: auto auto auto;
+=======
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+>>>>>>> bce211f23ecc93b87cf39d4e48c1b62534f9c356
   width: 100%;
   min-height: 400px;
   background-color: lightpink;

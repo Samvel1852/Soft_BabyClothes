@@ -1,3 +1,9 @@
+/* @media screen and (max-width: 550px) {
+  #mainNavbar {
+    position: static;
+  }
+} */
+
 * {
   box-sizing: border-box;
 }
@@ -107,8 +113,10 @@ body {
 }
 
 #section2 {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit, minmax(20%, 30%)); */
+  justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
   min-height: 400px;
   background-color: #add8e6;
