@@ -1,19 +1,28 @@
 * {
+  box-sizing: border-box;
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
+#logo > b > span {
+  font-size: 4em;
+}
+
 #mainNavbar {
   width: 100%;
+  /* position: fixed; */
 }
 
 #homeNavbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
   /* position: fixed; */
-  background-color: #fbbfcb;
+  background-color: lightpink;
+  flex-wrap: wrap;
 }
 
 #homeNavbar > a {
@@ -32,46 +41,39 @@
   border-radius: 80%;
 }
 
-#logo > b > span {
-  font-size: 4em;
-}
-
 #section1 {
   width: 100%;
-  /* background-image: url(../images/home-page-first-bac?hground.jpg); */
+  background-color: rgba(226, 216, 216, 0.993);
+  background-size: cover;
   min-height: 600px;
   /* display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); */
+  grid-template-columns: repeat(4, 1fr); */
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  background-color: #fbebee;
+  justify-content: space-around;
+}
+
+.itemDiv {
+  width: 20%;
+  /* margin-top: 1em; */
+  margin: 5px;
 }
 
 .itemImg {
   width: 100%;
-}
-
-.items {
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  /* border: 2px solid black; */
-  background-color: #fbd2da;
-  width: 20%;
-}
-
-.items > img {
-  /* height: 250px; */
+  height: 70%;
 }
 
 .addToCart {
-  border: none;
-  background-color: white;
-  margin-bottom: 3px;
-  transition: 0.3s;
+  background-color: yellow;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.buyNow {
+  background-color: orange;
+  font-size: 1em;
+  transition: 0.5s;
 }
 
 .addToCart:hover {
@@ -79,41 +81,18 @@
   transform: scale(1.2);
 }
 
-.buyNow {
-  border: none;
-  background-color: #fbbfcb;
-  transition: 0.3s;
-}
-
 .buyNow:hover {
   cursor: pointer;
   transform: scale(1.2);
 }
 
-.itemName {
-  font-family: Fantasy;
-}
-
-.itemPrice {
-  font-family: Fantasy;
-}
-
-#headSection {
-  margin: 10px;
-  background-color: rgb(104, 216, 216);
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 #section2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30%);
+  grid-template-columns: auto auto auto;
   width: 100%;
   min-height: 400px;
-  background-color: #fbbfcb;
-  color: white;
+  background-color: lightpink;
+  color: black;
 }
 
 #section2 > div > h4 {
@@ -126,23 +105,14 @@
   background-color: lightgray;
 }
 
-#logo > b > span {
-  font-size: 4em;
-}
 .listItems {
   margin: 15px;
 }
 
 .section2Titles {
-  margin: 20px;
+    margin: 20px
 }
 
 .section2Ul {
-  list-style-type: none;
-}
-
-#homeFooter {
-  display: flex;
-  align-items: center;
-  padding-left: 15px;
+    list-style-type: none;
 }

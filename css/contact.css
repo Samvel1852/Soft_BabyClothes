@@ -72,11 +72,7 @@ body {
 }
 
 .inputs {
-<<<<<<< HEAD
-  width: 400px;
-=======
   width: 500px;
->>>>>>> 2331756885fd31f6cd991f6e1da5d184d883dd8d
   display: flex;
   flex-direction: column;
   padding-left: 30px;
