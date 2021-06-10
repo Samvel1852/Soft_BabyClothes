@@ -111,8 +111,9 @@
 }
 
 #section2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 30%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
   min-height: 400px;
   background-color: #fbbfcb;
