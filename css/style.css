@@ -13,6 +13,13 @@ body {
   padding: 0;
 }
 
+#logo {
+  position: static;
+}
+
+@keyframes logo {
+}
+
 #logo > b > span {
   font-size: 4em;
 }
