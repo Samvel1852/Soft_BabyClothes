@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -34,19 +33,18 @@
   font-size: 4em;
 }
 
-
-
 #section1 {
   width: 100%;
-  background-color: rgb(129, 150, 144);
-  background-size: cover;
+  /* background-image: url(../images/home-page-first-bac?hground.jpg); */
   min-height: 600px;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: rgb(129, 150, 144);
 }
+
 .itemImg {
   width: 100%;
 }
@@ -56,13 +54,20 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgb(201, 233, 230);
+  width: 250px;
+  align-items: center;
+}
+
+.items > img {
+  height: 250px;
 }
 
 .addToCart {
-  border: none;
   background-color: cadetblue;
+  width: 80%;
+  border: none;
   margin-bottom: 3px;
   transition: 0.3s;
 }
@@ -75,6 +80,7 @@
 .buyNow {
   border: none;
   background-color: yellowgreen;
+  width: 80%;
   transition: 0.3s;
 }
 
@@ -141,6 +147,3 @@
   align-items: center;
   padding-left: 15px;
 }
-=======
-@import url(./department.css);
->>>>>>> 3823973862560cfe25516e7e92aa88da0465aa51
