@@ -14,10 +14,6 @@ body {
   padding: 0;
 }
 
-#logo:hover #logo > b > #s {
-  color: #40E0D0;
-}
-
 #logo > b > span {
   font-size: 4em;
 }
@@ -155,8 +151,7 @@ body {
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  background: #40E0D0; /* Green background with 30% opacity */
-  opacity: 0.6;
+  background: rgba(64, 224, 208, 0.7); /* Lightblue background with 30% opacity */
   border-radius: 10px;
   margin-top: 40px;
 }
@@ -164,19 +159,38 @@ body {
 #hotSell > div > img {
   width: 10em;
   transition: 0.4s;
+  height: 150px;
 }
 
 #hotSell > div > img:hover {
   width: 11em;
-  opacity: 0.8;
+  opacity: 0.6;
   cursor: pointer;
+}
+
+@keyframes sale {
+  0% {
+    color: white;
+  }
+
+  50% {
+    color: black;
+  }
+
+  100% {
+    color: white;
+  }
 }
 
 .saleText {
   color: white;
   font-size: 2em;
   background-color: #40E0D0;
-  margin: none;
+  padding: 5px;
+  animation-name: sale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition: 3s;
 }
 
 #section2 {
@@ -219,7 +233,7 @@ body {
 }
 
 .homeHotSaleImgDivs {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 10px;
 }
 
@@ -230,6 +244,6 @@ body {
 .hotSaleItemName {
   display: flex;
   justify-content: center;
-  background-color: red;
+  background-color: #40E0D0;
   color: white;
 }
