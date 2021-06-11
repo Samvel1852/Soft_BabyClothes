@@ -13,7 +13,7 @@
       <nav id="homeNavbar" class="topnav">
         <a id="logo" href="main.html"
           ><img src="images/logo.jpg" width="70" /><b>
-            <span style="color: blue">S</span>_<span style="color: blueviolet"
+            <span id="s" style="color: white">S</span>_<span id="b" style="color: #40e0d0"
               >B</span
             ></b
           >
@@ -25,8 +25,13 @@
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
         <form id="Search" action="main.html">
-          <input type="text" placeholder="Search by name" name="search" />
-          <button type="submit">
+          <input
+            class="searchInput"
+            type="text"
+            placeholder="Search by name"
+            name="search"
+          />
+          <button class="searchBtn" type="submit">
             <img src="images/search-icon.png" alt="Search" width="10" />
           </button>
         </form>
@@ -36,20 +41,22 @@
       <div>
         <div id="hotSell">
           <div class="homeHotSaleImgDivs">
-            <img
+            <img class="hotSaleImg"
               src="images/hot-selling1.jpg"
               alt="Image not loaded"
               width="100px"
             />
-            <p class="saleText">50% Off</p>
+            <p class="hotSaleItemName">LITTLE SIMBA</p>
+            <p class="saleText">50% OFF</p>
           </div>
           <div class="homeHotSaleImgDivs">
-            <img
+            <img class="hotSaleImg" 
               src="images/hot-selling2.jpg"
               alt="Image not loaded"
               width="100px"
             />
-            <p class="saleText">50% Off</p>
+            <p class="hotSaleItemName">ARRIEL</p>
+            <p class="saleText">50% OFF</p>
           </div>
         </div>
         <div id="sc1BtnDiv">

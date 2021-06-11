@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: cursive;
 }
 
 body {
@@ -53,7 +54,7 @@ body {
   width: 100%;
   height: 70px;
   display: flex;
-  justify-content: center;
+  /* justify-content: space-around; */
   align-items: center;
   color: white;
   font-size: 2.5em;

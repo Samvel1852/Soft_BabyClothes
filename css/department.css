@@ -1,16 +1,17 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: cursive;
 }
 
 #homeNavbar {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: center;
   /* position: fixed; */
-  background-color: rgb(124, 204, 124);
+  flex-wrap: wrap;
+  background-color: lightblue;
 }
 
 #homeNavbar > a {
@@ -29,12 +30,19 @@
   border-radius: 80%;
 }
 
+#logo > b > span {
+  font-size: 4em;
+}
+
 #section1 {
   width: 100%;
   /* background-image: url(../images/home-page-first-bac?hground.jpg); */
   min-height: 600px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(25%, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgb(129, 150, 144);
 }
 
@@ -47,13 +55,20 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
+  border-radius: 5px;
   background-color: rgb(201, 233, 230);
+  width: 250px;
+  align-items: center;
+}
+
+.items > img {
+  height: 250px;
 }
 
 .addToCart {
-  border: 2px solid blue;
-  background-color: cadetblue;
+  background-color: #40e0d0;
+  width: 80%;
+  border: none;
   margin-bottom: 3px;
   transition: 0.3s;
 }
@@ -64,8 +79,9 @@
 }
 
 .buyNow {
-  border: 2px solid blue;
-  background-color: yellowgreen;
+  border: none;
+  background-color: #819690;
+  width: 80%;
   transition: 0.3s;
 }
 
@@ -83,12 +99,13 @@
 }
 
 #headSection {
-  margin: 10px;
+  margin: 2px;
   background-color: rgb(104, 216, 216);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 #section2 {
@@ -97,8 +114,8 @@
   justify-content: space-around;
   width: 100%;
   min-height: 400px;
-  background-color: rgb(124, 204, 124);
-  color: black;
+  background-color: #add8e6;
+  color: white;
 }
 
 #section2 > div > h4 {
@@ -126,22 +143,6 @@
   list-style-type: none;
 }
 
-#orderedList {
-  margin-left: 20px;
-}
-
-#header1 {
-  display: flex;
-  justify-content: center;
-  font-size: 25px;
-}
-
-#gagasik {
-  padding: 20px;
-  background-color: cornsilk;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
 #homeFooter {
   display: flex;
   align-items: center;
