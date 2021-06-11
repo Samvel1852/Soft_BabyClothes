@@ -109,12 +109,18 @@ body {
 
 .infoLines {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-left: 10px;
 }
 
 .infoLines > img {
   width: 30px;
+}
+
+.infoLines > iframe {
+  width: 40vw;
+  height: 20vw;
 }
 
 .linkIcons {
