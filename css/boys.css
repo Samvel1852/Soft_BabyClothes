@@ -1,1 +1,6 @@
 @import url(./department.css);
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
