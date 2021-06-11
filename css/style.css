@@ -122,7 +122,7 @@ body {
 
 #sc1BtnDiv > button {
   border: none;
-  background-color: turquoise;
+  background-color: red;
   color: white;
   width: 250px;
   height: 50px;
@@ -130,11 +130,12 @@ body {
   /* font-weight: bold; */
   transition: 0.4s;
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  border-radius: 10px;
 }
 
 #sc1BtnDiv > button:hover {
   background: lightblue;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   cursor: pointer;
   color: black;
 }
@@ -145,13 +146,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 #hotSell {
+  padding: 20px;
   display: flex;
   justify-content: space-around;
-  background: rgba(223, 60, 60, 0.3) /* Green background with 30% opacity */
+  background: rgba(223, 60, 60, 0.5) /* Green background with 30% opacity */
   ;
+  border-radius: 10px;
 }
 
 #hotSell > div > img {
@@ -168,6 +172,8 @@ body {
 .saleText {
   color: white;
   font-size: 2em;
+  background-color: red;
+  margin: none;
 }
 
 #section2 {
@@ -207,4 +213,20 @@ body {
   display: flex;
   align-items: center;
   padding-left: 15px;
+}
+
+.homeHotSaleImgDivs {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.hotSaleImg {
+  border-radius: 10px;
+}
+
+.hotSaleItemName {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
 }
