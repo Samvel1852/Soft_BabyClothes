@@ -101,6 +101,8 @@ body {
 #hotSell {
   display: flex;
   justify-content: space-around;
+  background: rgba(223, 60, 60, 0.3) /* Green background with 30% opacity */
+  ;
 }
 
 #hotSell > div > img {
