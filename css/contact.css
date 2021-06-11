@@ -54,9 +54,9 @@ body {
   width: 100%;
   height: 70px;
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   font-size: 2.5em;
   align-content: space-around;
 }
@@ -66,6 +66,7 @@ body {
   min-height: 350px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .contactInputs {
@@ -82,10 +83,20 @@ body {
 .inputs > textarea {
   resize: none;
   height: 200px;
+  border: 2px solid;
+  background: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+}
+
+.inputs > input {
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid;
+  margin-bottom: 5px;
 }
 
 .inputs > button {
   width: 50%;
+  background-color: #FFB6C1;
 }
 
 .submitBtn {
@@ -97,9 +108,10 @@ body {
 }
 
 .submitBtn:hover {
-  background-color: lightgreen;
+  background-color: black;
   transform: scale(1.1);
   cursor: pointer;
+  color: white;
 }
 
 .contactInputs {
@@ -114,13 +126,22 @@ body {
   margin-left: 10px;
 }
 
+
+
 .infoLines > img {
   width: 30px;
 }
 
 .infoLines > iframe {
   width: 40vw;
-  height: 20vw;
+  height: 40vh;
+}
+
+@media (max-width: 600px) {
+  .infoLines > iframe {
+    width: 80vw;
+    height: 60vh;
+  }
 }
 
 .linkIcons {
