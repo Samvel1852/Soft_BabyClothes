@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: cursive;
 }
 
 body {
@@ -17,8 +18,9 @@ body {
   position: static;
 }
 
-@keyframes logo {
-}
+/* #logo:hover {
+  transform: rotate(360deg);
+} */
 
 #logo > b > span {
   font-size: 4em;
@@ -37,22 +39,69 @@ body {
   /* position: fixed; */
   background-color: lightblue;
   flex-wrap: wrap;
+  animation-name: navbarColorAnimation;
+  animation-duration: 5s;
+}
+
+@keyframes navbarColorAnimation {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: lightblue;
+  }
 }
 
 #homeNavbar > a {
-  color: black;
+  color: white;
   text-decoration: none;
   transition: 0.4s;
+  animation-name: departmentsColor;
+  animation-duration: 5s;
+}
+
+@keyframes departmentsColor {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
 }
 
 #homeNavbar > a:hover {
-  color: white;
+  color: gray;
   text-decoration: none;
   transform: scale(1.1);
 }
 
 #homeNavbar > a > img {
   border-radius: 80%;
+}
+
+.searchInput {
+  border: none;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.searchInput::placeholder {
+  color: #40e0d0;
+}
+
+.searchInput:hover {
+  border: 2px solid gray;
+}
+
+.searchBtn {
+  background-color: #40e0d0;
+  border: none;
+  transition: 0.4s;
+}
+
+.searchBtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 #section1 {
