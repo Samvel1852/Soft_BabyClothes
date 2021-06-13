@@ -156,6 +156,22 @@ body {
   margin-top: 40px;
 }
 
+@media (max-width: 800px) {
+  #hotSell {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 470px) {
+  #hotSell {
+    margin-top: 150px;
+  }
+
+  #section1 > div {
+    width: 100vw;
+  }
+}
+
 #hotSell > div > img {
   width: 10em;
   transition: 0.4s;
