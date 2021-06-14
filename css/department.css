@@ -5,7 +5,7 @@
   font-family: cursive;
 }
 
-#homeNavbar {
+.topnav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -14,19 +14,19 @@
   background-color: lightblue;
 }
 
-#homeNavbar > a {
+.topnav > a {
   color: black;
   text-decoration: none;
   transition: 0.4s;
 }
 
-#homeNavbar > a:hover {
+.topnav > a:hover {
   color: white;
   text-decoration: none;
   transform: scale(1.1);
 }
 
-#homeNavbar > a > img {
+.topnav > a > img {
   border-radius: 80%;
 }
 
