@@ -1,5 +1,5 @@
 /* @media screen and (max-width: 550px) {
-  #mainNavbar {
+  .headerOfNavbar {
     position: static;
   }
 } */
@@ -18,14 +18,31 @@ body {
   font-size: 4em;
 }
 
-#mainNavbar {
+.headerOfNavbar {
   width: 100%;
   position: fixed;
   margin-bottom: 10px;
   z-index: 1;
 }
 
-#homeNavbar {
+.welcomeSec {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.topnav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -97,7 +114,7 @@ body {
   transform: scale(1.1);
 }
 
-#section1 {
+.sec1 {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
