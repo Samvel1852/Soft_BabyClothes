@@ -20,26 +20,36 @@ body {
 
 .headerOfNavbar {
   width: 100%;
-  position: fixed;
+  position: sticky;
+  top: 0;
   margin-bottom: 10px;
   z-index: 1;
+  margin-bottom: 0;
 }
 
 .welcomeSec {
+  display: flex;
+  justify-content: center;
+}
+
+.welcomeText {
+  font-size: 2rem;
+  display: flex;
+  /* justify-content: center; */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .15em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens*/
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    blink-caret .75s;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+    from { width: 0; border-right: .15em solid black; }
+    to { width: 60%; border-right: .15em solid black;}
 }
 
 .topnav {
