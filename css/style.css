@@ -28,8 +28,39 @@ body {
 }
 
 .welcomeSec {
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.menuIconDiv {
+  width: 1.7em;
+  height: 1.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/menu-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+  transition: 0.5s;
+}
+
+@media (max-width: 800px) {
+  .navMenuItem {
+    display: none;
+    visibility: hidden;
+  }
+
+  .menuIconDiv {
+    display: flex;
+  }
+
+  .menuIconDiv:hover {
+    cursor: pointer;
+    background-color: gray;
+    transform: scale(1.1);
+  }
 }
 
 .welcomeText {
@@ -37,19 +68,30 @@ body {
   display: flex;
   /* justify-content: center; */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid white; /* The typwriter cursor */
+  border-right: 0.15em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens*/
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s;
 }
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 0; border-right: .15em solid black; }
-    to { width: 60%; border-right: .15em solid black;}
+  from {
+    width: 0;
+    border-right: 0.15em solid black;
+  }
+  to {
+    width: 47%;
+    border-right: 0.15em solid black;
+  }
+}
+
+@media (max-width: 750px) {
+  .welcomeSec {
+    width: 0;
+    height: 0;
+  }
 }
 
 .topnav {
@@ -124,6 +166,35 @@ body {
   transform: scale(1.1);
 }
 
+.mobileMenu {
+  width: 0;
+  height: 0;
+  display: none;
+  visibility: hidden;
+  background-color: #40e0d0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* .menuIconDiv:hover .mobileMenu {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  visibility: visible;
+} */
+
+.navMenuItemMobile {
+  color: white;
+  text-decoration: none;
+  transition: 0.5;
+}
+
+.navMenuItemMobile:hover {
+  color: gray;
+  transform: scale(1.1);
+}
+
 .sec1 {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -147,7 +218,7 @@ body {
 
 #sc1BtnDiv > button {
   border: none;
-  background-color: #40E0D0;
+  background-color: #40e0d0;
   color: white;
   width: 250px;
   height: 50px;
@@ -178,7 +249,12 @@ body {
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  background: rgba(64, 224, 208, 0.7); /* Lightblue background with 30% opacity */
+  background: rgba(
+    64,
+    224,
+    208,
+    0.7
+  ); /* Lightblue background with 30% opacity */
   border-radius: 10px;
   margin-top: 40px;
 }
@@ -228,7 +304,7 @@ body {
 .saleText {
   color: white;
   font-size: 2em;
-  background-color: #40E0D0;
+  background-color: #40e0d0;
   padding: 5px;
   animation-name: sale;
   animation-duration: 3s;
@@ -287,6 +363,6 @@ body {
 .hotSaleItemName {
   display: flex;
   justify-content: center;
-  background-color: #40E0D0;
+  background-color: #40e0d0;
   color: white;
 }

@@ -4,34 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:url"                content="https://samvel1852.github.io/Soft_BabyClothes/" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Soft_BabyClothes" />
-    <meta property="og:description"        content="This online shop contains only clothes for kids. You can find the best clothes for your child here." />
-    <meta property="og:image"              content="./images/logo.jpg" />
+    <meta
+      property="og:url"
+      content="https://samvel1852.github.io/Soft_BabyClothes/"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Soft_BabyClothes" />
+    <meta
+      property="og:description"
+      content="This online shop contains only clothes for kids. You can find the best clothes for your child here."
+    />
+    <meta property="og:image" content="./images/logo.jpg" />
     <title>Soft_Baby</title>
     <link rel="icon" href="images/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <section class="welcomeSec preHeader"> 
-      <p class="welcomeText"> Let Your Child Wear The Best Clothes </p> 
+    <script defer src="./js/index.js"></script>
+    <section class="welcomeSec preHeader">
+      <p class="welcomeText">Let Your Child Wear The Best</p>
     </section>
     <header id="mainNavbar" class="headerOfNavbar">
       <nav id="homeNavbar" class="topnav">
         <a id="logo" href="index.html"
           ><img src="images/logo.jpg" width="70" /><b>
-            <span id="s" style="color: white">S</span>_<span id="b" style="color: #40e0d0"
+            <span id="s" style="color: white">S</span>_<span
+              id="b"
+              style="color: #40e0d0"
               >B</span
             ></b
           >
         </a>
-        <a id="home" href="index.html">Home</a>
-        <a href="boys.html">Boys</a>
-        <a href="girls.html">Girls</a>
-        <a href="newborn.html">Newborns</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+        <a class="navMenuItem" id="home" href="index.html">Home</a>
+        <a class="navMenuItem" href="boys.html">Boys</a>
+        <a class="navMenuItem" href="girls.html">Girls</a>
+        <a class="navMenuItem" href="newborn.html">Newborns</a>
+        <a class="navMenuItem" href="contact.html">Contact</a>
+        <a class="navMenuItem" href="about.html">About</a>
         <form id="Search" action="index.html">
           <input
             class="searchInput"
@@ -43,13 +52,28 @@
             <img src="images/search-icon.png" alt="Search" width="10" />
           </button>
         </form>
+        <div
+          onclick="mobileNavbar();"
+          id="menuIconId"
+          class="menuIconDiv"
+          title="Menu"
+        ></div>
       </nav>
     </header>
+    <section class="mobileMenu" id="menuMobile">
+      <a class="navMenuItem" id="home" href="index.html">Home</a>
+      <a class="navMenuItemMobile" href="boys.html">Boys</a>
+      <a class="navMenuItemMobile" href="girls.html">Girls</a>
+      <a class="navMenuItemMobile" href="newborn.html">Newborns</a>
+      <a class="navMenuItemMobile" href="contact.html">Contact</a>
+      <a class="navMenuItemMobile" href="about.html">About</a>
+    </section>
     <section id="section1" class="sec1">
       <div>
         <div id="hotSell">
           <div class="homeHotSaleImgDivs">
-            <img class="hotSaleImg"
+            <img
+              class="hotSaleImg"
               src="images/homeWebp.webp"
               alt="Image not loaded"
               width="100px"
@@ -58,7 +82,8 @@
             <p class="saleText">50% OFF</p>
           </div>
           <div class="homeHotSaleImgDivs">
-            <img class="hotSaleImg" 
+            <img
+              class="hotSaleImg"
               src="images/homeWebp1.webp"
               alt="Image not loaded"
               width="100px"
