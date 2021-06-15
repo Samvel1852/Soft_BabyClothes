@@ -43,6 +43,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: none;
+  transition: 0.5s;
 }
 
 @media (max-width: 800px) {
@@ -57,6 +58,8 @@ body {
 
   .menuIconDiv:hover {
     cursor: pointer;
+    background-color: gray;
+    transform: scale(1.1);
   }
 }
 
@@ -156,6 +159,36 @@ body {
 
 .searchBtn:hover {
   cursor: pointer;
+  transform: scale(1.1);
+}
+
+.mobileMenu {
+  width: 0;
+  height: 0;
+  display: none;
+  visibility: hidden;
+  background-color: #40e0d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menuIconDiv:hover .mobileMenu {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  visibility: visible;
+}
+
+.navMenuItemMobile {
+  color: white;
+  text-decoration: none;
+  transition: 0.5;
+}
+
+.navMenuItemMobile:hover {
+  color: gray;
   transform: scale(1.1);
 }
 
