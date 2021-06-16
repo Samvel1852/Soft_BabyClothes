@@ -1,3 +1,5 @@
+@import url(./navBar.css);
+
 * {
   box-sizing: border-box;
   font-family: cursive;
@@ -72,7 +74,7 @@ body {
 @media (max-width: 580px) {
   .contactInfoDiv {
     padding: 10px;
-  }  
+  }
 }
 
 .contactInputs {
@@ -102,7 +104,7 @@ body {
 
 .inputs > button {
   width: 50%;
-  background-color: #FFB6C1;
+  background-color: #ffb6c1;
 }
 
 .submitBtn {
@@ -131,8 +133,6 @@ body {
   align-items: center;
   margin-left: 10px;
 }
-
-
 
 .infoLines > img {
   width: 30px;
