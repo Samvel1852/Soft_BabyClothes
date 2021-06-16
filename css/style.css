@@ -87,7 +87,7 @@ body {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .welcomeSec {
     width: 0;
     height: 0;
