@@ -55,9 +55,27 @@
       <hr width="80%" />
       <div class="contactInfoDiv">
         <div class="contactInputs inputs">
-          <input type="text" placeholder="Your name" />
-          <input id="ageInput" type="text" placeholder="Your age" />
-          <input id="emailInput" type="email" placeholder="Email" />
+          <input
+            class="nameInputClass contactInput"
+            id="nameInput"
+            type="text"
+            placeholder="Your name"
+            oninput="nameValid()"
+          />
+          <input
+            class="contactInput ageInp"
+            id="ageInput"
+            type="text"
+            placeholder="Your age"
+            oninput="ageValid()"
+          />
+          <input
+            class="contactInput emailInp"
+            id="emailInput"
+            type="email"
+            placeholder="Email"
+            oninput="emailValid()"
+          />
           <textarea placeholder="Message"></textarea>
           <button class="submitBtn">Submit</button>
         </div>
