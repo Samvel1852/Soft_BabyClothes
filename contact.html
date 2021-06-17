@@ -12,6 +12,12 @@
   <body>
     <script defer src="./js/index.js"></script>
     <script defer src="./js/contact.js"></script>
+    <section id="notificationId" class="notificationClass">
+      <button class="notificationCloseBtn" id="notifCloseBtnId" title="close">
+        X
+      </button>
+      <h3 class="notifName">Notification</h3>
+    </section>
     <section class="welcomeSec preHeader"></section>
     <header id="mainNavbar" class="headerOfNavbar">
       <nav id="homeNavbar" class="topnav" class="girlsNavbar">
@@ -72,7 +78,12 @@
             oninput="emailValid()"
           />
           <textarea placeholder="Message"></textarea>
-          <button class="submitBtn">Submit</button>
+          <button
+            class="submitBtn contactSubmitBtnClass"
+            id="contactSubmitBtnId"
+          >
+            Submit
+          </button>
         </div>
         <div class="contactInputs emails">
           <div class="infoLines">

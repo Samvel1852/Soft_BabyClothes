@@ -213,3 +213,33 @@ body {
 .valid {
   border: 4px solid lightgreen;
 }
+
+.notificationClass {
+  width: 30%;
+  min-height: 20vh;
+  position: absolute;
+  top: 10px;
+  left: 40vw;
+  background-color: white;
+  z-index: 9;
+  display: none;
+}
+
+.notificationCloseBtn {
+  position: absolute;
+  right: 0;
+  border: 0;
+  background: none;
+  transition: 0.5s;
+}
+
+.notificationCloseBtn:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.notifName {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}

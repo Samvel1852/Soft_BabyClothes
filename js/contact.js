@@ -37,3 +37,17 @@ function emailValid() {
     document.querySelector(".emailInp").classList.add("invalid");
   }
 }
+
+// notification code
+
+let notifCloseBtn = document.getElementById("notifCloseBtnId");
+let contactSubmit = document.getElementById("contactSubmitBtnId");
+let notificationBar = document.getElementById("notificationId");
+
+notifCloseBtn.addEventListener("click", function () {
+  notificationBar.style.display = "none";
+});
+
+contactSubmit.addEventListener("click", function () {
+  notificationBar.style.display = "block";
+});
