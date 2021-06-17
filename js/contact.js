@@ -44,10 +44,28 @@ let notifCloseBtn = document.getElementById("notifCloseBtnId");
 let contactSubmit = document.getElementById("contactSubmitBtnId");
 let notificationBar = document.getElementById("notificationId");
 
+let nameInp = document.getElementById("nameInput");
+let ageInp = document.getElementById("ageInput");
+let emailInp = document.getElementById("emailInput");
+let submitText = document.getElementById("notifySubmitId");
+let errText = document.getElementById("notifyErrId");
+
 notifCloseBtn.addEventListener("click", function () {
   notificationBar.style.display = "none";
 });
 
 contactSubmit.addEventListener("click", function () {
-  notificationBar.style.display = "block";
+  if (
+    nameInp.classList.contains("valid") &&
+    ageInp.classList.contains("valid") &&
+    emailInp.classList.contains("valid")
+  ) {
+    errText.style.display = "none";
+    submitText.style.display = "inline-block";
+    notificationBar.style.display = "block";
+  } else {
+    errText.style.display = "inline-block";
+    submitText.style.display = "none";
+    notificationBar.style.display = "block";
+  }
 });

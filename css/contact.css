@@ -223,23 +223,38 @@ body {
   background-color: white;
   z-index: 9;
   display: none;
+  transition: 0.5s;
 }
 
 .notificationCloseBtn {
+  width: 3rem;
+  color: white;
   position: absolute;
-  right: 0;
+  right: 1rem;
+  bottom: 1rem;
   border: 0;
-  background: none;
+  background: #40e0d0;
   transition: 0.5s;
 }
 
 .notificationCloseBtn:hover {
+  transform: scale(1.1);
   cursor: pointer;
-  color: red;
+  color: black;
 }
 
 .notifName {
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 10%;
+  color: rgb(84, 163, 84);
+  display: none;
+}
+
+.notifyErr {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  color: rgb(218, 20, 20);
+  display: none;
 }
