@@ -109,6 +109,12 @@ body {
   margin-bottom: 5px;
 }
 
+.contactInput::after {
+  content: "Add something";
+  background-color: greenyellow;
+  height: 20px;
+}
+
 .inputs > button {
   width: 50%;
   background-color: #ffb6c1;
