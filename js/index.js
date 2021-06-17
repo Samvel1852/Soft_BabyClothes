@@ -60,5 +60,14 @@ let intervalSlide = setInterval(() => {
 
 prevSlide.addEventListener("click", prevHotSaleSlide);
 nextSlide.addEventListener("click", hotSaleSlide);
-prevSlide.addEventListener("click", intervalSlide);
-nextSlide.addEventListener("click", intervalSlide);
+// prevSlide.addEventListener("click", intervalSlide);
+// nextSlide.addEventListener("click", intervalSlide);
+
+// Search input value keeping with url
+
+let searchInput = document.getElementById("searchInp");
+
+searchInput.setAttribute(
+  "value",
+  window.location.search.slice(window.location.search.indexOf("=") + 1)
+);

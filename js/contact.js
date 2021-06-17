@@ -1,6 +1,6 @@
 function nameValid() {
   let nameVal = document.getElementById("nameInput").value;
-  if (nameVal.trim().length < 3 || !/^[A-Za-z]*$/.test(nameVal)) {
+  if (nameVal.trim().length < 2 || !/^[A-Za-z]*$/.test(nameVal)) {
     document.querySelector(".nameInputClass").classList.remove("valid");
     document.querySelector(".nameInputClass").classList.add("invalid");
   } else {
