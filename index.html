@@ -52,12 +52,7 @@
             <img src="images/search-icon.png" alt="Search" width="10" />
           </button>
         </form>
-        <div
-          onclick="mobileNavbar();"
-          id="menuIconId"
-          class="menuIconDiv"
-          title="Menu"
-        ></div>
+        <div id="menuIconId" class="menuIconDiv" title="Menu"></div>
       </nav>
     </header>
     <section class="mobileMenu" id="menuMobile">
@@ -71,16 +66,17 @@
     <section id="section1" class="sec1">
       <div class="slideBtnsDiv" id="slideButtons">
         <div class="divBtn prevBtn" id="prevSlide">
-          <button>&#8592;</button>
+          <button id="prevBtn" class="slideBtn">&#8592;</button>
         </div>
         <div class="divBtn nextBtn" id="nextSlide">
-          <button>&#8594;</button>
+          <button id="nextBtn" class="slideBtn">&#8594;</button>
         </div>
       </div>
       <div class="hotSaleDiv">
         <div id="hotSell">
           <div class="homeHotSaleImgDivs">
             <img
+              id="hotSale1"
               class="hotSaleImg"
               src="images/homeWebp.webp"
               alt="Image not loaded"
@@ -91,6 +87,7 @@
           </div>
           <div class="homeHotSaleImgDivs">
             <img
+              id="hotSale2"
               class="hotSaleImg"
               src="images/homeWebp1.webp"
               alt="Image not loaded"
