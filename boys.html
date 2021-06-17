@@ -9,30 +9,45 @@
     <link rel="stylesheet" href="css/boys.css" />
   </head>
   <body>
+    <script defer src="./js/index.js"></script>
     <header>
       <nav id="homeNavbar" class="topnav">
         <a id="logo" href="index.html"
           ><img src="images/logo.jpg" width="70" /><b>
-            <span style="color: white">S</span>_<span style="color: #40E0D0"
+            <span style="color: white">S</span>_<span style="color: #40e0d0"
               >B</span
             ></b
           >
         </a>
-        <a id="home" href="index.html">Home</a>
-        <a href="boys.html">Boys</a>
-        <a href="girls.html">Girls</a>
-        <a href="newborn.html">Newborns</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+        <a class="navMenuItem" id="home" href="index.html">Home</a>
+        <a class="navMenuItem" href="boys.html">Boys</a>
+        <a class="navMenuItem" href="girls.html">Girls</a>
+        <a class="navMenuItem" href="newborn.html">Newborns</a>
+        <a class="navMenuItem" href="contact.html">Contact</a>
+        <a class="navMenuItem" href="about.html">About</a>
         <form id="Search" action="index.html">
           <input type="text" placeholder="Search by name" name="search" />
           <button type="submit">
             <img src="images/search-icon.png" alt="Search" width="10" />
           </button>
         </form>
+        <div
+          onclick="mobileNavbar();"
+          id="menuIconId"
+          class="menuIconDiv"
+          title="Menu"
+        ></div>
       </nav>
     </header>
-    <section id="section1">
+    <section class="mobileMenu" id="menuMobile">
+      <a class="navMenuItemMobile" id="home" href="index.html">Home</a>
+      <a class="navMenuItemMobile" href="boys.html">Boys</a>
+      <a class="navMenuItemMobile" href="girls.html">Girls</a>
+      <a class="navMenuItemMobile" href="newborn.html">Newborns</a>
+      <a class="navMenuItemMobile" href="contact.html">Contact</a>
+      <a class="navMenuItemMobile" href="about.html">About</a>
+    </section>
+    <section id="section1" class="depSection1">
       <div class="items">
         <img class="itemImg" src="images/boys/shor1.jpg" alt="shor1" />
         <p class="itemName">Sonic</p>

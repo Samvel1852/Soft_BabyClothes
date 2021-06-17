@@ -1,6 +1,10 @@
 @import url(./department.css);
 
 h1 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.addToCart:hover {
+  background-color: #04756a;
 }
