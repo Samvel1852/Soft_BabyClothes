@@ -387,3 +387,8 @@ body {
   background-color: #40e0d0;
   color: white;
 }
+
+.timeDivClass {
+  width: 100px;
+  height: 70px;
+}

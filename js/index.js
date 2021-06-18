@@ -74,13 +74,29 @@ searchInput.setAttribute(
 
 // notification
 
-let notification = Micro.notify({
-  title: "Timed!",
-  message: "I'm a timed notification. You only see me for 3 seconds!",
-  type: "timed",
-  timeShow: 3000,
-});
+// let notification = Micro.notify({
+//   title: "Timed!",
+//   message: "I'm a timed notification. You only see me for 3 seconds!",
+//   type: "timed",
+//   timeShow: 3000,
+// });
 
-let hotSaleBtn = document.getElementById("hotSaleBtn");
+// let hotSaleBtn = document.getElementById("hotSaleBtn");
 
-hotSaleBtn.addEventListener("click", notification);
+// hotSaleBtn.addEventListener("click", notification);
+
+// date and time
+
+let timeDiv = document.getElementById("timeDivId");
+
+function currentDateTime() {
+  let date = new Date();
+  timeDiv.innerHTML =
+    date.toLocaleDateString() + " " + date.toLocaleTimeString();
+}
+
+let timeInt = setInterval(() => {
+  currentDateTime();
+}, 1000);
+
+// console.log(timeDiv, currentDate);
