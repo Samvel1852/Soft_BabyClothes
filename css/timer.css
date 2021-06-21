@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timerSecClass {
+  width: 100%;
+  min-height: 30vh;
+  background-color: black;
+  color: white;
+}
+
+.timerDivClass button {
+  margin: 2px;
+}
+
+button:hover {
+  cursor: pointer;
+}
