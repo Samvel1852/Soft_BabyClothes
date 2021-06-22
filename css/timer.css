@@ -18,3 +18,16 @@
 button:hover {
   cursor: pointer;
 }
+
+.btnsDivClass {
+  width: 30%;
+  height: 60px;
+}
+
+.btnsDivClass > button {
+  margin: 2px;
+}
+
+.btnsDivClass > button:hover {
+  cursor: pointer;
+}

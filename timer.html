@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timer</title>
     <link rel="stylesheet" href="css/timer.css" />
+    <script src="./js/timer.js" defer></script>
   </head>
   <body>
-    <script defer src="./js/timer.js"></script>
     <section id="timerSecId" class="timerSecClass">
       <div id="setTimeDivId" class="setTimeDivClass">
         <label for="minutes">Minutes</label>
-        <input id="minutesId" type="number" value="minutes" /> <br />
+        <input id="minutesId" type="number" /> <br />
         <label for="seconds">Seconds</label>
-        <input id="secondsId" type="number" value="seconds" /> <br />
+        <input id="secondsId" type="number" /> <br />
         <button id="setTimeBtnId" class="setTimeBtnClass">Set Timer</button>
       </div>
       <div id="timerDivId" class="timerDivClass"></div>
+      <div id="btnsDivId" class="btnsDivClass"></div>
     </section>
   </body>
 </html>
