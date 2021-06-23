@@ -26,8 +26,20 @@ setTimeBtn.addEventListener("click", function () {
   btnsDiv.appendChild(reset);
 
   let timerInt = setInterval(function () {
-    secs--;
-    timerDiv.textContent = mins + ":" + secs;
+    if (secs > 0) {
+      secs--;
+      timerDiv.textContent = mins + ":" + secs;
+    } else {
+      if (mins > 0) {
+        mins--;
+        secs += 59;
+        timerDiv.textContent = mins + ":" + secs;
+      }
+    }
+
+    if (mins === 0 && secs === 0) {
+      clearInterval(timerInt);
+    }
   }, 1000);
 
   if (seconds.value < 60 && seconds.value >= 0) {
