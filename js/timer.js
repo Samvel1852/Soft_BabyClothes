@@ -51,4 +51,15 @@ setTimeBtn.addEventListener("click", function () {
       pause.innerText = "pause";
     }
   });
+
+  stop.addEventListener("click", function () {
+    clearInterval(timerInt);
+    timerDiv.textContent = "0:00";
+  });
+
+  reset.addEventListener("click", function () {
+    mins = minutes.value;
+    secs = seconds.value;
+    timerDiv.textContent = mins + ":" + secs;
+  });
 });
