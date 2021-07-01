@@ -379,6 +379,7 @@ body {
 
 .hotSaleImg {
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .hotSaleItemName {
