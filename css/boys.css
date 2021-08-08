@@ -8,3 +8,28 @@ h1 {
 .addToCart:hover {
   background-color: #04756a;
 }
+
+.searchInput {
+  border: none;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.searchInput::placeholder {
+  color: #40e0d0;
+}
+
+.searchInput:hover {
+  border: 2px solid gray;
+}
+
+.searchBtn {
+  background-color: #40e0d0;
+  border: none;
+  transition: 0.4s;
+}
+
+.searchBtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
